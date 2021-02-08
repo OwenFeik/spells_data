@@ -651,7 +651,7 @@
     {
         "name": "Blade of Disaster",
         "school": "conjuration",
-        "level": "level",
+        "level": 9,
         "cast": "1 Bonus Action",
         "range": "60 ft",
         "components": "V, S (a magic item or a willing creature from the destination world)",
@@ -2353,7 +2353,7 @@
     {
         "name": "Dream of the Blue Veil",
         "school": "conjuration",
-        "level": "level",
+        "level": 7,
         "cast": "10 minutes",
         "range": "20 ft",
         "components": "V, S, M (a magic item or a willing creature from the destination world)",
@@ -4250,7 +4250,7 @@
     {
         "name": "Intellect Fortress",
         "school": "abjuration",
-        "level": "level",
+        "level": 3,
         "cast": "1 Action",
         "range": "30 ft",
         "components": "V",
@@ -5139,7 +5139,7 @@
     {
         "name": "Mind Sliver",
         "school": "enchantment",
-        "level": "level",
+        "level": 0,
         "cast": "1 Action",
         "range": "60 ft",
         "components": "V",
@@ -6959,7 +6959,7 @@
     {
         "name": "Spirit Shroud",
         "school": "necromancy",
-        "level": "level",
+        "level": 3,
         "cast": "1 Action",
         "range": "30 ft",
         "components": "V, S",
@@ -7144,7 +7144,7 @@
     {
         "name": "Summon Aberration",
         "school": "conjuration",
-        "level": "level",
+        "level": 4,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (a pickled tentacle and an eyeball in a platinum-inlaid vial worth at least 400 gp)",
@@ -7161,7 +7161,7 @@
     {
         "name": "Summon Beast",
         "school": "evocation",
-        "level": "level",
+        "level": 2,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (a feather, tuft of fur, and fish tail inside a gilded acorn worth at least 200 gp)",
@@ -7178,7 +7178,7 @@
     {
         "name": "Summon Celestial",
         "school": "conjuration",
-        "level": "level",
+        "level": 5,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (a golden reliquary worth at least 500 gp)",
@@ -7195,7 +7195,7 @@
     {
         "name": "Summon Construct",
         "school": "conjuration",
-        "level": "level",
+        "level": 4,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (an ornate stone and metal lockbox worth at least 400 gp)",
@@ -7211,7 +7211,7 @@
     {
         "name": "Summon Elemental",
         "school": "conjuration",
-        "level": "level",
+        "level": 4,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (air, a pebble, ash, and water inside a gold-inlaid vial worth at least 400 gp)",
@@ -7229,7 +7229,7 @@
     {
         "name": "Summon Fey",
         "school": "conjuration",
-        "level": "level",
+        "level": 3,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (a gilded flower worth at least 300 gp)",
@@ -7248,7 +7248,7 @@
     {
         "name": "Summon Fiend",
         "school": "conjuration",
-        "level": "level",
+        "level": 6,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (humanoid blood inside a ruby vial worth at least 600 gp)",
@@ -7293,7 +7293,7 @@
     {
         "name": "Summon Shadowspawn",
         "school": "conjuration",
-        "level": "level",
+        "level": 3,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (tears inside a gem worth at least 300 gp)",
@@ -7310,7 +7310,7 @@
     {
         "name": "Summon Undead",
         "school": "necromancy",
-        "level": "level",
+        "level": 3,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V, S, M (a gilded skull worth at least 300 gp)",
@@ -7425,7 +7425,7 @@
     {
         "name": "Tasha's Caustic Brew",
         "school": "evocation",
-        "level": "level",
+        "level": 1,
         "cast": "1 Action",
         "range": "Self (30 ft)",
         "components": "V, S, M (a bit of rotten food)",
@@ -7463,7 +7463,7 @@
     {
         "name": "Tasha's Mind Whip",
         "school": "enchantment",
-        "level": "level",
+        "level": 2,
         "cast": "1 Action",
         "range": "90 ft",
         "components": "V",
@@ -7480,7 +7480,7 @@
     {
         "name": "Tasha's Otherworldly Guise",
         "school": "transmutation",
-        "level": "level",
+        "level": 6,
         "cast": "1 Bonus Action",
         "range": "Self",
         "components": "V, S, M (an object engraved with a symbol of the Outer Planes, worth at least 500 gp)",
