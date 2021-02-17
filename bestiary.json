@@ -1,7 +1,7 @@
 [
     {
         "name": "Aarakocra",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -52,7 +52,7 @@
     },
     {
         "name": "Aboleth",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 21,
         "dex": 9,
@@ -134,7 +134,7 @@
     },
     {
         "name": "Abominable Yeti",
-        "size": "H",
+        "size": "Huge",
         "type": "monstrosity",
         "str": 24,
         "dex": 10,
@@ -194,7 +194,7 @@
     },
     {
         "name": "Acolyte",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -232,7 +232,7 @@
     },
     {
         "name": "Adult Black Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 23,
         "dex": 14,
@@ -320,7 +320,7 @@
     },
     {
         "name": "Adult Blue Dracolich",
-        "size": "H",
+        "size": "Huge",
         "type": "undead",
         "str": 25,
         "dex": 10,
@@ -408,7 +408,7 @@
     },
     {
         "name": "Adult Blue Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 25,
         "dex": 10,
@@ -492,7 +492,7 @@
     },
     {
         "name": "Adult Brass Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 23,
         "dex": 10,
@@ -578,7 +578,7 @@
     },
     {
         "name": "Adult Bronze Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 25,
         "dex": 10,
@@ -671,7 +671,7 @@
     },
     {
         "name": "Adult Copper Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 23,
         "dex": 12,
@@ -756,7 +756,7 @@
     },
     {
         "name": "Adult Gold Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 27,
         "dex": 14,
@@ -850,7 +850,7 @@
     },
     {
         "name": "Adult Green Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 23,
         "dex": 12,
@@ -941,7 +941,7 @@
     },
     {
         "name": "Adult Red Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 27,
         "dex": 10,
@@ -1025,7 +1025,7 @@
     },
     {
         "name": "Adult Silver Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 27,
         "dex": 10,
@@ -1115,7 +1115,7 @@
     },
     {
         "name": "Adult White Dragon",
-        "size": "H",
+        "size": "Huge",
         "type": "dragon",
         "str": 22,
         "dex": 10,
@@ -1203,7 +1203,7 @@
     },
     {
         "name": "Air Elemental",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 14,
         "dex": 20,
@@ -1248,7 +1248,7 @@
     },
     {
         "name": "Allosaurus",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 19,
         "dex": 13,
@@ -1287,7 +1287,7 @@
     },
     {
         "name": "Ancient Black Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 27,
         "dex": 14,
@@ -1375,7 +1375,7 @@
     },
     {
         "name": "Ancient Blue Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 29,
         "dex": 10,
@@ -1459,7 +1459,7 @@
     },
     {
         "name": "Ancient Brass Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 27,
         "dex": 10,
@@ -1549,7 +1549,7 @@
     },
     {
         "name": "Ancient Bronze Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 29,
         "dex": 10,
@@ -1642,7 +1642,7 @@
     },
     {
         "name": "Ancient Copper Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 27,
         "dex": 12,
@@ -1731,7 +1731,7 @@
     },
     {
         "name": "Ancient Gold Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 30,
         "dex": 14,
@@ -1825,7 +1825,7 @@
     },
     {
         "name": "Ancient Green Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 27,
         "dex": 12,
@@ -1916,7 +1916,7 @@
     },
     {
         "name": "Ancient Red Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 30,
         "dex": 10,
@@ -2000,7 +2000,7 @@
     },
     {
         "name": "Ancient Silver Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 30,
         "dex": 10,
@@ -2090,7 +2090,7 @@
     },
     {
         "name": "Ancient White Dragon",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 26,
         "dex": 10,
@@ -2178,7 +2178,7 @@
     },
     {
         "name": "Androsphinx",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 22,
         "dex": 10,
@@ -2254,7 +2254,7 @@
     },
     {
         "name": "Animated Armor",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 14,
         "dex": 11,
@@ -2297,7 +2297,7 @@
     },
     {
         "name": "Ankheg",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 17,
         "dex": 11,
@@ -2332,7 +2332,7 @@
     },
     {
         "name": "Ankylosaurus",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 19,
         "dex": 11,
@@ -2360,7 +2360,7 @@
     },
     {
         "name": "Ape",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 16,
         "dex": 14,
@@ -2399,7 +2399,7 @@
     },
     {
         "name": "Arcanaloth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -2460,7 +2460,7 @@
     },
     {
         "name": "Archmage",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -2506,7 +2506,7 @@
     },
     {
         "name": "Assassin",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -2570,7 +2570,7 @@
     },
     {
         "name": "Awakened Shrub",
-        "size": "S",
+        "size": "Small",
         "type": "plant",
         "str": 3,
         "dex": 8,
@@ -2605,7 +2605,7 @@
     },
     {
         "name": "Awakened Tree",
-        "size": "H",
+        "size": "Huge",
         "type": "plant",
         "str": 19,
         "dex": 6,
@@ -2640,7 +2640,7 @@
     },
     {
         "name": "Axe Beak",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 14,
         "dex": 12,
@@ -2668,7 +2668,7 @@
     },
     {
         "name": "Azer",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 17,
         "dex": 12,
@@ -2713,7 +2713,7 @@
     },
     {
         "name": "Baboon",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 8,
         "dex": 14,
@@ -2746,7 +2746,7 @@
     },
     {
         "name": "Badger",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 4,
         "dex": 11,
@@ -2781,7 +2781,7 @@
     },
     {
         "name": "Balor",
-        "size": "H",
+        "size": "Huge",
         "type": {
             "type": "fiend",
             "tags": [
@@ -2853,7 +2853,7 @@
     },
     {
         "name": "Bandit",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -2892,7 +2892,7 @@
     },
     {
         "name": "Bandit Captain",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -2942,7 +2942,7 @@
     },
     {
         "name": "Banshee",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 1,
         "dex": 14,
@@ -2995,7 +2995,7 @@
     },
     {
         "name": "Barbed Devil",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -3067,7 +3067,7 @@
     },
     {
         "name": "Barlgura",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -3129,7 +3129,7 @@
     },
     {
         "name": "Basilisk",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 16,
         "dex": 8,
@@ -3164,7 +3164,7 @@
     },
     {
         "name": "Bat",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 15,
@@ -3203,7 +3203,7 @@
     },
     {
         "name": "Bearded Devil",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -3266,7 +3266,7 @@
     },
     {
         "name": "Behir",
-        "size": "H",
+        "size": "Huge",
         "type": "monstrosity",
         "str": 23,
         "dex": 16,
@@ -3317,7 +3317,7 @@
     },
     {
         "name": "Beholder",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 10,
         "dex": 14,
@@ -3377,7 +3377,7 @@
     },
     {
         "name": "Beholder Zombie",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 10,
         "dex": 8,
@@ -3420,7 +3420,7 @@
     },
     {
         "name": "Berserker",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -3460,7 +3460,7 @@
     },
     {
         "name": "Black Bear",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 15,
         "dex": 10,
@@ -3503,7 +3503,7 @@
     },
     {
         "name": "Black Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 15,
         "dex": 14,
@@ -3553,7 +3553,7 @@
     },
     {
         "name": "Black Pudding",
-        "size": "L",
+        "size": "Large",
         "type": "ooze",
         "str": 16,
         "dex": 5,
@@ -3596,7 +3596,7 @@
     },
     {
         "name": "Blink Dog",
-        "size": "M",
+        "size": "Medium",
         "type": "fey",
         "str": 12,
         "dex": 17,
@@ -3639,7 +3639,7 @@
     },
     {
         "name": "Blood Hawk",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 6,
         "dex": 14,
@@ -3678,7 +3678,7 @@
     },
     {
         "name": "Blue Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 17,
         "dex": 10,
@@ -3723,7 +3723,7 @@
     },
     {
         "name": "Blue Slaad",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 20,
         "dex": 15,
@@ -3775,7 +3775,7 @@
     },
     {
         "name": "Boar",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 13,
         "dex": 11,
@@ -3812,7 +3812,7 @@
     },
     {
         "name": "Bone Devil",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -3874,7 +3874,7 @@
     },
     {
         "name": "Bone Naga (Guardian)",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 15,
         "dex": 16,
@@ -3906,7 +3906,7 @@
     },
     {
         "name": "Bone Naga (Spirit)",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 15,
         "dex": 16,
@@ -3938,7 +3938,7 @@
     },
     {
         "name": "Brass Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 15,
         "dex": 10,
@@ -3983,7 +3983,7 @@
     },
     {
         "name": "Bronze Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 17,
         "dex": 10,
@@ -4033,7 +4033,7 @@
     },
     {
         "name": "Brown Bear",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 19,
         "dex": 10,
@@ -4076,7 +4076,7 @@
     },
     {
         "name": "Bugbear",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -4130,7 +4130,7 @@
     },
     {
         "name": "Bugbear Chief",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -4193,7 +4193,7 @@
     },
     {
         "name": "Bulette",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 19,
         "dex": 11,
@@ -4235,7 +4235,7 @@
     },
     {
         "name": "Bullywug",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -4297,7 +4297,7 @@
     },
     {
         "name": "Cambion",
-        "size": "M",
+        "size": "Medium",
         "type": "fiend",
         "str": 18,
         "dex": 18,
@@ -4358,7 +4358,7 @@
     },
     {
         "name": "Camel",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 16,
         "dex": 8,
@@ -4386,7 +4386,7 @@
     },
     {
         "name": "Carrion Crawler",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 14,
         "dex": 13,
@@ -4435,7 +4435,7 @@
     },
     {
         "name": "Cat",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 3,
         "dex": 15,
@@ -4471,7 +4471,7 @@
     },
     {
         "name": "Cave Bear",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 20,
         "dex": 10,
@@ -4516,7 +4516,7 @@
     },
     {
         "name": "Centaur",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 14,
@@ -4568,7 +4568,7 @@
     },
     {
         "name": "Chain Devil",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -4627,7 +4627,7 @@
     },
     {
         "name": "Chasme",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -4684,7 +4684,7 @@
     },
     {
         "name": "Chimera",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 19,
         "dex": 11,
@@ -4734,7 +4734,7 @@
     },
     {
         "name": "Chuul",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 19,
         "dex": 10,
@@ -4785,7 +4785,7 @@
     },
     {
         "name": "Clay Golem",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 20,
         "dex": 9,
@@ -4846,7 +4846,7 @@
     },
     {
         "name": "Cloaker",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 17,
         "dex": 15,
@@ -4910,7 +4910,7 @@
     },
     {
         "name": "Cloud Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 27,
         "dex": 10,
@@ -4961,7 +4961,7 @@
     },
     {
         "name": "Cockatrice",
-        "size": "S",
+        "size": "Small",
         "type": "monstrosity",
         "str": 6,
         "dex": 12,
@@ -4991,7 +4991,7 @@
     },
     {
         "name": "Commoner",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -5026,7 +5026,7 @@
     },
     {
         "name": "Constrictor Snake",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 14,
@@ -5060,7 +5060,7 @@
     },
     {
         "name": "Copper Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 15,
         "dex": 12,
@@ -5105,7 +5105,7 @@
     },
     {
         "name": "Couatl",
-        "size": "M",
+        "size": "Medium",
         "type": "celestial",
         "str": 16,
         "dex": 20,
@@ -5159,7 +5159,7 @@
     },
     {
         "name": "Crab",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 11,
@@ -5196,7 +5196,7 @@
     },
     {
         "name": "Crawling Claw",
-        "size": "T",
+        "size": "Tiny",
         "type": "undead",
         "str": 13,
         "dex": 14,
@@ -5233,7 +5233,7 @@
     },
     {
         "name": "Crocodile",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 10,
@@ -5268,7 +5268,7 @@
     },
     {
         "name": "Cult Fanatic",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -5316,7 +5316,7 @@
     },
     {
         "name": "Cultist",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -5359,7 +5359,7 @@
     },
     {
         "name": "Cyclops",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 22,
         "dex": 11,
@@ -5402,7 +5402,7 @@
     },
     {
         "name": "Dao",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 23,
         "dex": 12,
@@ -5459,7 +5459,7 @@
     },
     {
         "name": "Darkmantle",
-        "size": "S",
+        "size": "Small",
         "type": "monstrosity",
         "str": 16,
         "dex": 12,
@@ -5504,7 +5504,7 @@
     },
     {
         "name": "Death Dog",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 15,
         "dex": 14,
@@ -5546,7 +5546,7 @@
     },
     {
         "name": "Death Knight",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 20,
         "dex": 11,
@@ -5600,7 +5600,7 @@
     },
     {
         "name": "Death Slaad",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "aberration",
             "tags": [
@@ -5671,7 +5671,7 @@
     },
     {
         "name": "Death Tyrant",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 10,
         "dex": 14,
@@ -5733,7 +5733,7 @@
     },
     {
         "name": "Deep Gnome (Svirfneblin)",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -5789,7 +5789,7 @@
     },
     {
         "name": "Deer",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 11,
         "dex": 16,
@@ -5817,7 +5817,7 @@
     },
     {
         "name": "Demilich",
-        "size": "T",
+        "size": "Tiny",
         "type": "undead",
         "str": 1,
         "dex": 20,
@@ -5893,7 +5893,7 @@
     },
     {
         "name": "Deva",
-        "size": "M",
+        "size": "Medium",
         "type": "celestial",
         "str": 18,
         "dex": 18,
@@ -5953,7 +5953,7 @@
     },
     {
         "name": "Dire Wolf",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 15,
@@ -5993,7 +5993,7 @@
     },
     {
         "name": "Displacer Beast",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 15,
@@ -6036,7 +6036,7 @@
     },
     {
         "name": "Djinni",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 21,
         "dex": 15,
@@ -6085,7 +6085,7 @@
     },
     {
         "name": "Doppelganger",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -6146,7 +6146,7 @@
     },
     {
         "name": "Draft Horse",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 18,
         "dex": 10,
@@ -6174,7 +6174,7 @@
     },
     {
         "name": "Dragon Turtle",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "dragon",
         "str": 25,
         "dex": 10,
@@ -6232,7 +6232,7 @@
     },
     {
         "name": "Dretch",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "fiend",
             "tags": [
@@ -6282,7 +6282,7 @@
     },
     {
         "name": "Drider",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 16,
         "dex": 16,
@@ -6347,7 +6347,7 @@
     },
     {
         "name": "Drow",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6401,7 +6401,7 @@
     },
     {
         "name": "Drow Elite Warrior",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6463,7 +6463,7 @@
     },
     {
         "name": "Drow Mage",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6519,7 +6519,7 @@
     },
     {
         "name": "Drow Priestess of Lolth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6583,7 +6583,7 @@
     },
     {
         "name": "Druid",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6622,7 +6622,7 @@
     },
     {
         "name": "Dryad",
-        "size": "M",
+        "size": "Medium",
         "type": "fey",
         "str": 10,
         "dex": 12,
@@ -6675,7 +6675,7 @@
     },
     {
         "name": "Duergar",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -6734,7 +6734,7 @@
     },
     {
         "name": "Duodrone",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 11,
         "dex": 13,
@@ -6783,7 +6783,7 @@
     },
     {
         "name": "Dust Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 5,
         "dex": 14,
@@ -6828,7 +6828,7 @@
     },
     {
         "name": "Eagle",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 6,
         "dex": 15,
@@ -6863,7 +6863,7 @@
     },
     {
         "name": "Earth Elemental",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 20,
         "dex": 8,
@@ -6909,7 +6909,7 @@
     },
     {
         "name": "Efreeti",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 22,
         "dex": 12,
@@ -6958,7 +6958,7 @@
     },
     {
         "name": "Elephant",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 22,
         "dex": 9,
@@ -6995,7 +6995,7 @@
     },
     {
         "name": "Elk",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 16,
         "dex": 10,
@@ -7032,7 +7032,7 @@
     },
     {
         "name": "Empyrean",
-        "size": "H",
+        "size": "Huge",
         "type": {
             "type": "celestial",
             "tags": [
@@ -7111,7 +7111,7 @@
     },
     {
         "name": "Erinyes",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -7171,7 +7171,7 @@
     },
     {
         "name": "Ettercap",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 14,
         "dex": 15,
@@ -7230,7 +7230,7 @@
     },
     {
         "name": "Ettin",
-        "size": "L",
+        "size": "Large",
         "type": "giant",
         "str": 21,
         "dex": 8,
@@ -7282,7 +7282,7 @@
     },
     {
         "name": "Faerie Dragon (Blue)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7340,7 +7340,7 @@
     },
     {
         "name": "Faerie Dragon (Green)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7398,7 +7398,7 @@
     },
     {
         "name": "Faerie Dragon (Indigo)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7456,7 +7456,7 @@
     },
     {
         "name": "Faerie Dragon (Orange)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7514,7 +7514,7 @@
     },
     {
         "name": "Faerie Dragon (Red)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7572,7 +7572,7 @@
     },
     {
         "name": "Faerie Dragon (Violet)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7630,7 +7630,7 @@
     },
     {
         "name": "Faerie Dragon (Yellow)",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 3,
         "dex": 20,
@@ -7688,7 +7688,7 @@
     },
     {
         "name": "Fire Elemental",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 10,
         "dex": 17,
@@ -7737,7 +7737,7 @@
     },
     {
         "name": "Fire Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 25,
         "dex": 9,
@@ -7782,7 +7782,7 @@
     },
     {
         "name": "Fire Snake",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 12,
         "dex": 14,
@@ -7827,7 +7827,7 @@
     },
     {
         "name": "Flameskull",
-        "size": "T",
+        "size": "Tiny",
         "type": "undead",
         "str": 1,
         "dex": 17,
@@ -7879,7 +7879,7 @@
     },
     {
         "name": "Flesh Golem",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 19,
         "dex": 9,
@@ -7940,7 +7940,7 @@
     },
     {
         "name": "Flumph",
-        "size": "S",
+        "size": "Small",
         "type": "aberration",
         "str": 6,
         "dex": 15,
@@ -7994,7 +7994,7 @@
     },
     {
         "name": "Flying Snake",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 4,
         "dex": 18,
@@ -8029,7 +8029,7 @@
     },
     {
         "name": "Flying Sword",
-        "size": "S",
+        "size": "Small",
         "type": "construct",
         "str": 12,
         "dex": 15,
@@ -8070,7 +8070,7 @@
     },
     {
         "name": "Fomorian",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 23,
         "dex": 10,
@@ -8118,7 +8118,7 @@
     },
     {
         "name": "Frog",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 1,
         "dex": 13,
@@ -8155,7 +8155,7 @@
     },
     {
         "name": "Frost Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 23,
         "dex": 9,
@@ -8200,7 +8200,7 @@
     },
     {
         "name": "Galeb Duhr",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 20,
         "dex": 14,
@@ -8246,7 +8246,7 @@
     },
     {
         "name": "Gargoyle",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 15,
         "dex": 11,
@@ -8291,7 +8291,7 @@
     },
     {
         "name": "Gas Spore",
-        "size": "L",
+        "size": "Large",
         "type": "plant",
         "str": 5,
         "dex": 1,
@@ -8330,7 +8330,7 @@
     },
     {
         "name": "Gelatinous Cube",
-        "size": "L",
+        "size": "Large",
         "type": "ooze",
         "str": 14,
         "dex": 3,
@@ -8373,7 +8373,7 @@
     },
     {
         "name": "Ghast",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 16,
         "dex": 17,
@@ -8418,7 +8418,7 @@
     },
     {
         "name": "Ghost",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 7,
         "dex": 13,
@@ -8471,7 +8471,7 @@
     },
     {
         "name": "Ghoul",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 13,
         "dex": 15,
@@ -8507,7 +8507,7 @@
     },
     {
         "name": "Giant Ape",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 23,
         "dex": 14,
@@ -8546,7 +8546,7 @@
     },
     {
         "name": "Giant Badger",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 13,
         "dex": 10,
@@ -8589,7 +8589,7 @@
     },
     {
         "name": "Giant Bat",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 16,
@@ -8628,7 +8628,7 @@
     },
     {
         "name": "Giant Boar",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 10,
@@ -8665,7 +8665,7 @@
     },
     {
         "name": "Giant Centipede",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 5,
         "dex": 14,
@@ -8695,7 +8695,7 @@
     },
     {
         "name": "Giant Constrictor Snake",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 19,
         "dex": 14,
@@ -8731,7 +8731,7 @@
     },
     {
         "name": "Giant Crab",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 13,
         "dex": 15,
@@ -8768,7 +8768,7 @@
     },
     {
         "name": "Giant Crocodile",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 21,
         "dex": 9,
@@ -8811,7 +8811,7 @@
     },
     {
         "name": "Giant Eagle",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 16,
         "dex": 17,
@@ -8857,7 +8857,7 @@
     },
     {
         "name": "Giant Elk",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 19,
         "dex": 16,
@@ -8899,7 +8899,7 @@
     },
     {
         "name": "Giant Fire Beetle",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 8,
         "dex": 10,
@@ -8934,7 +8934,7 @@
     },
     {
         "name": "Giant Frog",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 12,
         "dex": 13,
@@ -8980,7 +8980,7 @@
     },
     {
         "name": "Giant Goat",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 11,
@@ -9017,7 +9017,7 @@
     },
     {
         "name": "Giant Hyena",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 16,
         "dex": 14,
@@ -9052,7 +9052,7 @@
     },
     {
         "name": "Giant Lizard",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 12,
@@ -9082,7 +9082,7 @@
     },
     {
         "name": "Giant Octopus",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 13,
@@ -9132,7 +9132,7 @@
     },
     {
         "name": "Giant Owl",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 13,
         "dex": 15,
@@ -9177,7 +9177,7 @@
     },
     {
         "name": "Giant Poisonous Snake",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 10,
         "dex": 18,
@@ -9209,7 +9209,7 @@
     },
     {
         "name": "Giant Rat",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 7,
         "dex": 15,
@@ -9248,7 +9248,7 @@
     },
     {
         "name": "Giant Scorpion",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 13,
@@ -9286,7 +9286,7 @@
     },
     {
         "name": "Giant Sea Horse",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 12,
         "dex": 15,
@@ -9323,7 +9323,7 @@
     },
     {
         "name": "Giant Shark",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 23,
         "dex": 11,
@@ -9364,7 +9364,7 @@
     },
     {
         "name": "Giant Spider",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 14,
         "dex": 16,
@@ -9414,7 +9414,7 @@
     },
     {
         "name": "Giant Toad",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 13,
@@ -9457,7 +9457,7 @@
     },
     {
         "name": "Giant Vulture",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 15,
         "dex": 10,
@@ -9506,7 +9506,7 @@
     },
     {
         "name": "Giant Wasp",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 10,
         "dex": 14,
@@ -9534,7 +9534,7 @@
     },
     {
         "name": "Giant Weasel",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 11,
         "dex": 16,
@@ -9572,7 +9572,7 @@
     },
     {
         "name": "Giant Wolf Spider",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 12,
         "dex": 16,
@@ -9619,7 +9619,7 @@
     },
     {
         "name": "Gibbering Mouther",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 10,
         "dex": 8,
@@ -9666,7 +9666,7 @@
     },
     {
         "name": "Githyanki Knight",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -9709,7 +9709,7 @@
     },
     {
         "name": "Githyanki Warrior",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -9752,7 +9752,7 @@
     },
     {
         "name": "Githzerai Monk",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -9804,7 +9804,7 @@
     },
     {
         "name": "Githzerai Zerth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -9857,7 +9857,7 @@
     },
     {
         "name": "Glabrezu",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -9913,7 +9913,7 @@
     },
     {
         "name": "Gladiator",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -9972,7 +9972,7 @@
     },
     {
         "name": "Gnoll",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -10022,7 +10022,7 @@
     },
     {
         "name": "Gnoll Fang of Yeenoghu",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -10077,7 +10077,7 @@
     },
     {
         "name": "Gnoll Pack Lord",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -10135,7 +10135,7 @@
     },
     {
         "name": "Goat",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 12,
         "dex": 10,
@@ -10172,7 +10172,7 @@
     },
     {
         "name": "Goblin",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -10221,7 +10221,7 @@
     },
     {
         "name": "Goblin Boss",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -10274,7 +10274,7 @@
     },
     {
         "name": "Gold Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 19,
         "dex": 14,
@@ -10324,7 +10324,7 @@
     },
     {
         "name": "Gorgon",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 20,
         "dex": 11,
@@ -10369,7 +10369,7 @@
     },
     {
         "name": "Goristro",
-        "size": "H",
+        "size": "Huge",
         "type": {
             "type": "fiend",
             "tags": [
@@ -10442,7 +10442,7 @@
     },
     {
         "name": "Gray Ooze",
-        "size": "M",
+        "size": "Medium",
         "type": "ooze",
         "str": 12,
         "dex": 6,
@@ -10487,7 +10487,7 @@
     },
     {
         "name": "Gray Slaad",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "aberration",
             "tags": [
@@ -10558,7 +10558,7 @@
     },
     {
         "name": "Green Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 15,
         "dex": 12,
@@ -10608,7 +10608,7 @@
     },
     {
         "name": "Green Hag",
-        "size": "M",
+        "size": "Medium",
         "type": "fey",
         "str": 18,
         "dex": 12,
@@ -10675,7 +10675,7 @@
     },
     {
         "name": "Green Slaad",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "aberration",
             "tags": [
@@ -10746,7 +10746,7 @@
     },
     {
         "name": "Grell",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 15,
         "dex": 14,
@@ -10789,7 +10789,7 @@
     },
     {
         "name": "Grick",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 14,
         "dex": 14,
@@ -10832,7 +10832,7 @@
     },
     {
         "name": "Grick Alpha",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 16,
@@ -10879,7 +10879,7 @@
     },
     {
         "name": "Griffon",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 15,
@@ -10924,7 +10924,7 @@
     },
     {
         "name": "Grimlock",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -10978,7 +10978,7 @@
     },
     {
         "name": "Guard",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -11015,7 +11015,7 @@
     },
     {
         "name": "Guardian Naga",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 19,
         "dex": 18,
@@ -11063,7 +11063,7 @@
     },
     {
         "name": "Gynosphinx",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 15,
@@ -11131,7 +11131,7 @@
     },
     {
         "name": "Half-Ogre (Ogrillon)",
-        "size": "L",
+        "size": "Large",
         "type": "giant",
         "str": 17,
         "dex": 10,
@@ -11168,7 +11168,7 @@
     },
     {
         "name": "Half-Red Dragon Veteran",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -11226,7 +11226,7 @@
     },
     {
         "name": "Harpy",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 12,
         "dex": 13,
@@ -11268,7 +11268,7 @@
     },
     {
         "name": "Hawk",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 5,
         "dex": 16,
@@ -11303,7 +11303,7 @@
     },
     {
         "name": "Hell Hound",
-        "size": "M",
+        "size": "Medium",
         "type": "fiend",
         "str": 17,
         "dex": 12,
@@ -11350,7 +11350,7 @@
     },
     {
         "name": "Helmed Horror",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 18,
         "dex": 13,
@@ -11397,7 +11397,7 @@
     },
     {
         "name": "Hezrou",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -11456,7 +11456,7 @@
     },
     {
         "name": "Hill Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 21,
         "dex": 8,
@@ -11496,7 +11496,7 @@
     },
     {
         "name": "Hippogriff",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 17,
         "dex": 13,
@@ -11539,7 +11539,7 @@
     },
     {
         "name": "Hobgoblin",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -11586,7 +11586,7 @@
     },
     {
         "name": "Hobgoblin Captain",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -11641,7 +11641,7 @@
     },
     {
         "name": "Hobgoblin Warlord",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -11704,7 +11704,7 @@
     },
     {
         "name": "Homunculus",
-        "size": "T",
+        "size": "Tiny",
         "type": "construct",
         "str": 4,
         "dex": 15,
@@ -11741,7 +11741,7 @@
     },
     {
         "name": "Hook Horror",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 10,
@@ -11789,7 +11789,7 @@
     },
     {
         "name": "Horned Devil",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -11853,7 +11853,7 @@
     },
     {
         "name": "Hunter Shark",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 18,
         "dex": 13,
@@ -11894,7 +11894,7 @@
     },
     {
         "name": "Hydra",
-        "size": "H",
+        "size": "Huge",
         "type": "monstrosity",
         "str": 20,
         "dex": 12,
@@ -11947,7 +11947,7 @@
     },
     {
         "name": "Hyena",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 11,
         "dex": 13,
@@ -11982,7 +11982,7 @@
     },
     {
         "name": "Ice Devil",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -12051,7 +12051,7 @@
     },
     {
         "name": "Ice Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 7,
         "dex": 13,
@@ -12100,7 +12100,7 @@
     },
     {
         "name": "Imp",
-        "size": "T",
+        "size": "Tiny",
         "type": {
             "type": "fiend",
             "tags": [
@@ -12160,7 +12160,7 @@
     },
     {
         "name": "Incubus",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -12227,7 +12227,7 @@
     },
     {
         "name": "Intellect Devourer",
-        "size": "T",
+        "size": "Tiny",
         "type": "aberration",
         "str": 6,
         "dex": 14,
@@ -12280,7 +12280,7 @@
     },
     {
         "name": "Invisible Stalker",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 16,
         "dex": 19,
@@ -12329,7 +12329,7 @@
     },
     {
         "name": "Iron Golem",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 24,
         "dex": 9,
@@ -12390,7 +12390,7 @@
     },
     {
         "name": "Jackal",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 8,
         "dex": 15,
@@ -12429,7 +12429,7 @@
     },
     {
         "name": "Jackalwere",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12489,7 +12489,7 @@
     },
     {
         "name": "Kenku",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12541,7 +12541,7 @@
     },
     {
         "name": "Killer Whale",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 19,
         "dex": 10,
@@ -12586,7 +12586,7 @@
     },
     {
         "name": "Knight",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12641,7 +12641,7 @@
     },
     {
         "name": "Kobold",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12692,7 +12692,7 @@
     },
     {
         "name": "Kraken",
-        "size": "G",
+        "size": "Gargantuan",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -12785,7 +12785,7 @@
     },
     {
         "name": "Kuo-toa",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12849,7 +12849,7 @@
     },
     {
         "name": "Kuo-toa Archpriest",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12914,7 +12914,7 @@
     },
     {
         "name": "Kuo-toa Monitor",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -12983,7 +12983,7 @@
     },
     {
         "name": "Kuo-toa Whip",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13048,7 +13048,7 @@
     },
     {
         "name": "Lamia",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 16,
         "dex": 13,
@@ -13097,7 +13097,7 @@
     },
     {
         "name": "Lemure",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -13143,7 +13143,7 @@
     },
     {
         "name": "Lich",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 11,
         "dex": 16,
@@ -13221,7 +13221,7 @@
     },
     {
         "name": "Lion",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 15,
@@ -13273,7 +13273,7 @@
     },
     {
         "name": "Lizard",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 11,
@@ -13303,7 +13303,7 @@
     },
     {
         "name": "Lizard King",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13369,7 +13369,7 @@
     },
     {
         "name": "Lizard Queen",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13435,7 +13435,7 @@
     },
     {
         "name": "Lizardfolk",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13495,7 +13495,7 @@
     },
     {
         "name": "Lizardfolk Shaman",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13551,7 +13551,7 @@
     },
     {
         "name": "Mage",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -13592,7 +13592,7 @@
     },
     {
         "name": "Magma Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 8,
         "dex": 12,
@@ -13640,7 +13640,7 @@
     },
     {
         "name": "Magmin",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 7,
         "dex": 15,
@@ -13681,7 +13681,7 @@
     },
     {
         "name": "Mammoth",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 24,
         "dex": 9,
@@ -13718,7 +13718,7 @@
     },
     {
         "name": "Manes",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "fiend",
             "tags": [
@@ -13755,7 +13755,7 @@
     },
     {
         "name": "Manticore",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 17,
         "dex": 16,
@@ -13804,7 +13804,7 @@
     },
     {
         "name": "Marid",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 22,
         "dex": 12,
@@ -13858,7 +13858,7 @@
     },
     {
         "name": "Marilith",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -13926,7 +13926,7 @@
     },
     {
         "name": "Mastiff",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 13,
         "dex": 14,
@@ -13961,7 +13961,7 @@
     },
     {
         "name": "Medusa",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 10,
         "dex": 15,
@@ -14015,7 +14015,7 @@
     },
     {
         "name": "Merfolk",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -14058,7 +14058,7 @@
     },
     {
         "name": "Merrow",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 10,
@@ -14108,7 +14108,7 @@
     },
     {
         "name": "Mezzoloth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -14171,7 +14171,7 @@
     },
     {
         "name": "Mimic",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -14229,7 +14229,7 @@
     },
     {
         "name": "Mind Flayer",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 11,
         "dex": 12,
@@ -14287,7 +14287,7 @@
     },
     {
         "name": "Mind Flayer Arcanist",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 11,
         "dex": 12,
@@ -14345,7 +14345,7 @@
     },
     {
         "name": "Minotaur",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 11,
@@ -14396,7 +14396,7 @@
     },
     {
         "name": "Minotaur Skeleton",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 18,
         "dex": 11,
@@ -14437,7 +14437,7 @@
     },
     {
         "name": "Monodrone",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 10,
         "dex": 13,
@@ -14482,7 +14482,7 @@
     },
     {
         "name": "Mud Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 8,
         "dex": 12,
@@ -14530,7 +14530,7 @@
     },
     {
         "name": "Mule",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 14,
         "dex": 10,
@@ -14567,7 +14567,7 @@
     },
     {
         "name": "Mummy",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 16,
         "dex": 8,
@@ -14609,7 +14609,7 @@
     },
     {
         "name": "Mummy Lord",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 18,
         "dex": 10,
@@ -14694,7 +14694,7 @@
     },
     {
         "name": "Myconid Adult",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 10,
         "dex": 10,
@@ -14741,7 +14741,7 @@
     },
     {
         "name": "Myconid Sovereign",
-        "size": "L",
+        "size": "Large",
         "type": "plant",
         "str": 12,
         "dex": 10,
@@ -14800,7 +14800,7 @@
     },
     {
         "name": "Myconid Sprout",
-        "size": "S",
+        "size": "Small",
         "type": "plant",
         "str": 8,
         "dex": 10,
@@ -14843,7 +14843,7 @@
     },
     {
         "name": "Nalfeshnee",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -14907,7 +14907,7 @@
     },
     {
         "name": "Needle Blight",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 12,
         "dex": 12,
@@ -14943,7 +14943,7 @@
     },
     {
         "name": "Night Hag",
-        "size": "M",
+        "size": "Medium",
         "type": "fiend",
         "str": 18,
         "dex": 15,
@@ -15015,7 +15015,7 @@
     },
     {
         "name": "Nightmare",
-        "size": "L",
+        "size": "Large",
         "type": "fiend",
         "str": 18,
         "dex": 15,
@@ -15058,7 +15058,7 @@
     },
     {
         "name": "Noble",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -15097,7 +15097,7 @@
     },
     {
         "name": "Nothic",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 14,
         "dex": 16,
@@ -15151,7 +15151,7 @@
     },
     {
         "name": "Nycaloth",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -15216,7 +15216,7 @@
     },
     {
         "name": "Ochre Jelly",
-        "size": "L",
+        "size": "Large",
         "type": "ooze",
         "str": 15,
         "dex": 6,
@@ -15255,7 +15255,7 @@
     },
     {
         "name": "Octopus",
-        "size": "S",
+        "size": "Small",
         "type": "beast",
         "str": 4,
         "dex": 15,
@@ -15305,7 +15305,7 @@
     },
     {
         "name": "Ogre",
-        "size": "L",
+        "size": "Large",
         "type": "giant",
         "str": 19,
         "dex": 8,
@@ -15342,7 +15342,7 @@
     },
     {
         "name": "Ogre Zombie",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 19,
         "dex": 6,
@@ -15381,7 +15381,7 @@
     },
     {
         "name": "Oni",
-        "size": "L",
+        "size": "Large",
         "type": "giant",
         "str": 19,
         "dex": 11,
@@ -15444,7 +15444,7 @@
     },
     {
         "name": "Orc",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -15493,7 +15493,7 @@
     },
     {
         "name": "Orc Eye of Gruumsh",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -15543,7 +15543,7 @@
     },
     {
         "name": "Orc War Chief",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -15608,7 +15608,7 @@
     },
     {
         "name": "Orog",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -15662,7 +15662,7 @@
     },
     {
         "name": "Otyugh",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 16,
         "dex": 11,
@@ -15713,7 +15713,7 @@
     },
     {
         "name": "Owl",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 3,
         "dex": 13,
@@ -15755,7 +15755,7 @@
     },
     {
         "name": "Owlbear",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 20,
         "dex": 12,
@@ -15800,7 +15800,7 @@
     },
     {
         "name": "Panther",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 14,
         "dex": 15,
@@ -15844,7 +15844,7 @@
     },
     {
         "name": "Pegasus",
-        "size": "L",
+        "size": "Large",
         "type": "celestial",
         "str": 18,
         "dex": 15,
@@ -15883,7 +15883,7 @@
     },
     {
         "name": "Pentadrone",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 15,
         "dex": 14,
@@ -15934,7 +15934,7 @@
     },
     {
         "name": "Peryton",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 16,
         "dex": 12,
@@ -15987,7 +15987,7 @@
     },
     {
         "name": "Phase Spider",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 15,
         "dex": 15,
@@ -16032,7 +16032,7 @@
     },
     {
         "name": "Piercer",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 10,
         "dex": 13,
@@ -16074,7 +16074,7 @@
     },
     {
         "name": "Pit Fiend",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -16145,7 +16145,7 @@
     },
     {
         "name": "Pixie",
-        "size": "T",
+        "size": "Tiny",
         "type": "fey",
         "str": 2,
         "dex": 20,
@@ -16183,7 +16183,7 @@
     },
     {
         "name": "Planetar",
-        "size": "L",
+        "size": "Large",
         "type": "celestial",
         "str": 24,
         "dex": 20,
@@ -16243,7 +16243,7 @@
     },
     {
         "name": "Plesiosaurus",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 18,
         "dex": 15,
@@ -16279,7 +16279,7 @@
     },
     {
         "name": "Poisonous Snake",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 16,
@@ -16309,7 +16309,7 @@
     },
     {
         "name": "Polar Bear",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 20,
         "dex": 10,
@@ -16352,7 +16352,7 @@
     },
     {
         "name": "Poltergeist",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 1,
         "dex": 14,
@@ -16401,7 +16401,7 @@
     },
     {
         "name": "Pony",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 15,
         "dex": 10,
@@ -16429,7 +16429,7 @@
     },
     {
         "name": "Priest",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -16473,7 +16473,7 @@
     },
     {
         "name": "Pseudodragon",
-        "size": "T",
+        "size": "Tiny",
         "type": "dragon",
         "str": 6,
         "dex": 15,
@@ -16526,7 +16526,7 @@
     },
     {
         "name": "Pteranodon",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 12,
         "dex": 15,
@@ -16561,7 +16561,7 @@
     },
     {
         "name": "Purple Worm",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "monstrosity",
         "str": 28,
         "dex": 7,
@@ -16608,7 +16608,7 @@
     },
     {
         "name": "Quadrone",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 12,
         "dex": 14,
@@ -16659,7 +16659,7 @@
     },
     {
         "name": "Quaggoth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -16707,7 +16707,7 @@
     },
     {
         "name": "Quaggoth Spore Servant",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 17,
         "dex": 12,
@@ -16741,7 +16741,7 @@
     },
     {
         "name": "Quaggoth Thonot",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -16789,7 +16789,7 @@
     },
     {
         "name": "Quasit",
-        "size": "T",
+        "size": "Tiny",
         "type": {
             "type": "fiend",
             "tags": [
@@ -16846,7 +16846,7 @@
     },
     {
         "name": "Quipper",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 16,
@@ -16885,7 +16885,7 @@
     },
     {
         "name": "Rakshasa",
-        "size": "M",
+        "size": "Medium",
         "type": "fiend",
         "str": 14,
         "dex": 17,
@@ -16930,7 +16930,7 @@
     },
     {
         "name": "Rat",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 11,
@@ -16965,7 +16965,7 @@
     },
     {
         "name": "Raven",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 14,
@@ -17000,7 +17000,7 @@
     },
     {
         "name": "Red Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 19,
         "dex": 10,
@@ -17045,7 +17045,7 @@
     },
     {
         "name": "Red Slaad",
-        "size": "L",
+        "size": "Large",
         "type": "aberration",
         "str": 16,
         "dex": 12,
@@ -17097,7 +17097,7 @@
     },
     {
         "name": "Reef Shark",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 14,
         "dex": 13,
@@ -17138,7 +17138,7 @@
     },
     {
         "name": "Remorhaz",
-        "size": "H",
+        "size": "Huge",
         "type": "monstrosity",
         "str": 24,
         "dex": 13,
@@ -17178,7 +17178,7 @@
     },
     {
         "name": "Revenant",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 18,
         "dex": 14,
@@ -17240,7 +17240,7 @@
     },
     {
         "name": "Rhinoceros",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 21,
         "dex": 8,
@@ -17273,7 +17273,7 @@
     },
     {
         "name": "Riding Horse",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 16,
         "dex": 10,
@@ -17301,7 +17301,7 @@
     },
     {
         "name": "Roc",
-        "size": "G",
+        "size": "Gargantuan",
         "type": "monstrosity",
         "str": 28,
         "dex": 10,
@@ -17349,7 +17349,7 @@
     },
     {
         "name": "Roper",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 8,
@@ -17407,7 +17407,7 @@
     },
     {
         "name": "Rug of Smothering",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 17,
         "dex": 14,
@@ -17450,7 +17450,7 @@
     },
     {
         "name": "Rust Monster",
-        "size": "M",
+        "size": "Medium",
         "type": "monstrosity",
         "str": 13,
         "dex": 12,
@@ -17493,7 +17493,7 @@
     },
     {
         "name": "Saber-Toothed Tiger",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 18,
         "dex": 14,
@@ -17537,7 +17537,7 @@
     },
     {
         "name": "Sahuagin",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -17601,7 +17601,7 @@
     },
     {
         "name": "Sahuagin Baron",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -17670,7 +17670,7 @@
     },
     {
         "name": "Sahuagin Priestess",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -17731,7 +17731,7 @@
     },
     {
         "name": "Salamander",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 18,
         "dex": 14,
@@ -17780,7 +17780,7 @@
     },
     {
         "name": "Satyr",
-        "size": "M",
+        "size": "Medium",
         "type": "fey",
         "str": 12,
         "dex": 16,
@@ -17829,7 +17829,7 @@
     },
     {
         "name": "Scarecrow",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 11,
         "dex": 13,
@@ -17874,7 +17874,7 @@
     },
     {
         "name": "Scorpion",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 11,
@@ -17904,7 +17904,7 @@
     },
     {
         "name": "Scout",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -17957,7 +17957,7 @@
     },
     {
         "name": "Sea Hag",
-        "size": "M",
+        "size": "Medium",
         "type": "fey",
         "str": 16,
         "dex": 13,
@@ -18019,7 +18019,7 @@
     },
     {
         "name": "Sea Horse",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 1,
         "dex": 12,
@@ -18047,7 +18047,7 @@
     },
     {
         "name": "Shadow",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 6,
         "dex": 14,
@@ -18092,7 +18092,7 @@
     },
     {
         "name": "Shadow Demon",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -18148,7 +18148,7 @@
     },
     {
         "name": "Shambling Mound",
-        "size": "L",
+        "size": "Large",
         "type": "plant",
         "str": 18,
         "dex": 8,
@@ -18193,7 +18193,7 @@
     },
     {
         "name": "Shield Guardian",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 18,
         "dex": 8,
@@ -18243,7 +18243,7 @@
     },
     {
         "name": "Shrieker",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 1,
         "dex": 1,
@@ -18278,7 +18278,7 @@
     },
     {
         "name": "Silver Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 19,
         "dex": 10,
@@ -18323,7 +18323,7 @@
     },
     {
         "name": "Skeleton",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 10,
         "dex": 14,
@@ -18359,7 +18359,7 @@
     },
     {
         "name": "Slaad Tadpole",
-        "size": "T",
+        "size": "Tiny",
         "type": "aberration",
         "str": 7,
         "dex": 15,
@@ -18398,7 +18398,7 @@
     },
     {
         "name": "Smoke Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 6,
         "dex": 14,
@@ -18443,7 +18443,7 @@
     },
     {
         "name": "Solar",
-        "size": "L",
+        "size": "Large",
         "type": "celestial",
         "str": 26,
         "dex": 22,
@@ -18528,7 +18528,7 @@
     },
     {
         "name": "Spectator",
-        "size": "M",
+        "size": "Medium",
         "type": "aberration",
         "str": 8,
         "dex": 14,
@@ -18572,7 +18572,7 @@
     },
     {
         "name": "Specter",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 1,
         "dex": 14,
@@ -18613,7 +18613,7 @@
     },
     {
         "name": "Spider",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 2,
         "dex": 14,
@@ -18658,7 +18658,7 @@
     },
     {
         "name": "Spined Devil",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "fiend",
             "tags": [
@@ -18725,7 +18725,7 @@
     },
     {
         "name": "Spirit Naga",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 17,
@@ -18768,7 +18768,7 @@
     },
     {
         "name": "Sprite",
-        "size": "T",
+        "size": "Tiny",
         "type": "fey",
         "str": 3,
         "dex": 18,
@@ -18815,7 +18815,7 @@
     },
     {
         "name": "Spy",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -18875,7 +18875,7 @@
     },
     {
         "name": "Steam Mephit",
-        "size": "S",
+        "size": "Small",
         "type": "elemental",
         "str": 5,
         "dex": 11,
@@ -18917,7 +18917,7 @@
     },
     {
         "name": "Stirge",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 4,
         "dex": 16,
@@ -18947,7 +18947,7 @@
     },
     {
         "name": "Stone Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 23,
         "dex": 15,
@@ -18999,7 +18999,7 @@
     },
     {
         "name": "Stone Golem",
-        "size": "L",
+        "size": "Large",
         "type": "construct",
         "str": 22,
         "dex": 9,
@@ -19052,7 +19052,7 @@
     },
     {
         "name": "Storm Giant",
-        "size": "H",
+        "size": "Huge",
         "type": "giant",
         "str": 29,
         "dex": 14,
@@ -19110,7 +19110,7 @@
     },
     {
         "name": "Succubus",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -19177,7 +19177,7 @@
     },
     {
         "name": "Swarm of Bats",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19223,7 +19223,7 @@
     },
     {
         "name": "Swarm of Beetles",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19261,7 +19261,7 @@
     },
     {
         "name": "Swarm of Centipedes",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19299,7 +19299,7 @@
     },
     {
         "name": "Swarm of Insects",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19337,7 +19337,7 @@
     },
     {
         "name": "Swarm of Poisonous Snakes",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19375,7 +19375,7 @@
     },
     {
         "name": "Swarm of Quippers",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19421,7 +19421,7 @@
     },
     {
         "name": "Swarm of Rats",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19463,7 +19463,7 @@
     },
     {
         "name": "Swarm of Ravens",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19501,7 +19501,7 @@
     },
     {
         "name": "Swarm of Spiders",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19551,7 +19551,7 @@
     },
     {
         "name": "Swarm of Wasps",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "beast",
             "swarmSize": "T"
@@ -19589,7 +19589,7 @@
     },
     {
         "name": "Tarrasque",
-        "size": "G",
+        "size": "Gargantuan",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -19686,7 +19686,7 @@
     },
     {
         "name": "Thri-kreen",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -19744,7 +19744,7 @@
     },
     {
         "name": "Thug",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -19794,7 +19794,7 @@
     },
     {
         "name": "Tiger",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 17,
         "dex": 15,
@@ -19840,7 +19840,7 @@
     },
     {
         "name": "Treant",
-        "size": "H",
+        "size": "Huge",
         "type": "plant",
         "str": 23,
         "dex": 8,
@@ -19894,7 +19894,7 @@
     },
     {
         "name": "Tribal Warrior",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -19934,7 +19934,7 @@
     },
     {
         "name": "Triceratops",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 22,
         "dex": 9,
@@ -19971,7 +19971,7 @@
     },
     {
         "name": "Tridrone",
-        "size": "M",
+        "size": "Medium",
         "type": "construct",
         "str": 12,
         "dex": 13,
@@ -20020,7 +20020,7 @@
     },
     {
         "name": "Troglodyte",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -20080,7 +20080,7 @@
     },
     {
         "name": "Troll",
-        "size": "L",
+        "size": "Large",
         "type": "giant",
         "str": 18,
         "dex": 13,
@@ -20131,7 +20131,7 @@
     },
     {
         "name": "Twig Blight",
-        "size": "S",
+        "size": "Small",
         "type": "plant",
         "str": 6,
         "dex": 13,
@@ -20170,7 +20170,7 @@
     },
     {
         "name": "Tyrannosaurus Rex",
-        "size": "H",
+        "size": "Huge",
         "type": "beast",
         "str": 25,
         "dex": 10,
@@ -20208,7 +20208,7 @@
     },
     {
         "name": "Ultroloth",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -20272,7 +20272,7 @@
     },
     {
         "name": "Umber Hulk",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 20,
         "dex": 13,
@@ -20322,7 +20322,7 @@
     },
     {
         "name": "Unicorn",
-        "size": "L",
+        "size": "Large",
         "type": "celestial",
         "str": 18,
         "dex": 14,
@@ -20403,7 +20403,7 @@
     },
     {
         "name": "Vampire",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "undead",
             "tags": [
@@ -20505,7 +20505,7 @@
     },
     {
         "name": "Vampire Spawn",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 16,
         "dex": 16,
@@ -20564,7 +20564,7 @@
     },
     {
         "name": "Vampire Spellcaster",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "undead",
             "tags": [
@@ -20666,7 +20666,7 @@
     },
     {
         "name": "Vampire Warrior",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "undead",
             "tags": [
@@ -20776,7 +20776,7 @@
     },
     {
         "name": "Veteran",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -20826,7 +20826,7 @@
     },
     {
         "name": "Vine Blight",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 15,
         "dex": 8,
@@ -20869,7 +20869,7 @@
     },
     {
         "name": "Violet Fungus",
-        "size": "M",
+        "size": "Medium",
         "type": "plant",
         "str": 3,
         "dex": 1,
@@ -20908,7 +20908,7 @@
     },
     {
         "name": "Vrock",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "fiend",
             "tags": [
@@ -20971,7 +20971,7 @@
     },
     {
         "name": "Vulture",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 7,
         "dex": 10,
@@ -21010,7 +21010,7 @@
     },
     {
         "name": "Warhorse",
-        "size": "L",
+        "size": "Large",
         "type": "beast",
         "str": 18,
         "dex": 12,
@@ -21043,7 +21043,7 @@
     },
     {
         "name": "Warhorse Skeleton",
-        "size": "L",
+        "size": "Large",
         "type": "undead",
         "str": 18,
         "dex": 12,
@@ -21073,7 +21073,7 @@
     },
     {
         "name": "Water Elemental",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 18,
         "dex": 14,
@@ -21122,7 +21122,7 @@
     },
     {
         "name": "Water Weird",
-        "size": "L",
+        "size": "Large",
         "type": "elemental",
         "str": 17,
         "dex": 16,
@@ -21163,7 +21163,7 @@
     },
     {
         "name": "Weasel",
-        "size": "T",
+        "size": "Tiny",
         "type": "beast",
         "str": 3,
         "dex": 16,
@@ -21199,7 +21199,7 @@
     },
     {
         "name": "Werebear",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21258,7 +21258,7 @@
     },
     {
         "name": "Wereboar",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21317,7 +21317,7 @@
     },
     {
         "name": "Wererat",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21379,7 +21379,7 @@
     },
     {
         "name": "Weretiger",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21449,7 +21449,7 @@
     },
     {
         "name": "Werewolf",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21508,7 +21508,7 @@
     },
     {
         "name": "White Dragon Wyrmling",
-        "size": "M",
+        "size": "Medium",
         "type": "dragon",
         "str": 14,
         "dex": 10,
@@ -21553,7 +21553,7 @@
     },
     {
         "name": "Wight",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 15,
         "dex": 14,
@@ -21605,7 +21605,7 @@
     },
     {
         "name": "Will-o'-Wisp",
-        "size": "T",
+        "size": "Tiny",
         "type": "undead",
         "str": 1,
         "dex": 28,
@@ -21658,7 +21658,7 @@
     },
     {
         "name": "Winged Kobold",
-        "size": "S",
+        "size": "Small",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -21709,7 +21709,7 @@
     },
     {
         "name": "Winter Wolf",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 13,
@@ -21761,7 +21761,7 @@
     },
     {
         "name": "Wolf",
-        "size": "M",
+        "size": "Medium",
         "type": "beast",
         "str": 12,
         "dex": 15,
@@ -21801,7 +21801,7 @@
     },
     {
         "name": "Worg",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 16,
         "dex": 13,
@@ -21841,7 +21841,7 @@
     },
     {
         "name": "Wraith",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 6,
         "dex": 16,
@@ -21886,7 +21886,7 @@
     },
     {
         "name": "Wyvern",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 19,
         "dex": 10,
@@ -21930,7 +21930,7 @@
     },
     {
         "name": "Xorn",
-        "size": "M",
+        "size": "Medium",
         "type": "elemental",
         "str": 17,
         "dex": 10,
@@ -21987,7 +21987,7 @@
     },
     {
         "name": "Yeti",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 13,
@@ -22043,7 +22043,7 @@
     },
     {
         "name": "Yochlol",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "fiend",
             "tags": [
@@ -22116,7 +22116,7 @@
     },
     {
         "name": "Young Black Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 19,
         "dex": 14,
@@ -22175,7 +22175,7 @@
     },
     {
         "name": "Young Blue Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 21,
         "dex": 10,
@@ -22229,7 +22229,7 @@
     },
     {
         "name": "Young Brass Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 19,
         "dex": 10,
@@ -22284,7 +22284,7 @@
     },
     {
         "name": "Young Bronze Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 21,
         "dex": 10,
@@ -22344,7 +22344,7 @@
     },
     {
         "name": "Young Copper Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 19,
         "dex": 12,
@@ -22399,7 +22399,7 @@
     },
     {
         "name": "Young Gold Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 23,
         "dex": 14,
@@ -22460,7 +22460,7 @@
     },
     {
         "name": "Young Green Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 19,
         "dex": 12,
@@ -22520,7 +22520,7 @@
     },
     {
         "name": "Young Red Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 23,
         "dex": 10,
@@ -22574,7 +22574,7 @@
     },
     {
         "name": "Young Red Shadow Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 23,
         "dex": 10,
@@ -22641,7 +22641,7 @@
     },
     {
         "name": "Young Remorhaz",
-        "size": "L",
+        "size": "Large",
         "type": "monstrosity",
         "str": 18,
         "dex": 13,
@@ -22677,7 +22677,7 @@
     },
     {
         "name": "Young Silver Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 23,
         "dex": 10,
@@ -22733,7 +22733,7 @@
     },
     {
         "name": "Young White Dragon",
-        "size": "L",
+        "size": "Large",
         "type": "dragon",
         "str": 18,
         "dex": 10,
@@ -22792,7 +22792,7 @@
     },
     {
         "name": "Yuan-ti Abomination",
-        "size": "L",
+        "size": "Large",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -22860,7 +22860,7 @@
     },
     {
         "name": "Yuan-ti Malison (Type 1)",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -22928,7 +22928,7 @@
     },
     {
         "name": "Yuan-ti Malison (Type 2)",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -22988,7 +22988,7 @@
     },
     {
         "name": "Yuan-ti Malison (Type 3)",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "monstrosity",
             "tags": [
@@ -23060,7 +23060,7 @@
     },
     {
         "name": "Yuan-ti Pureblood",
-        "size": "M",
+        "size": "Medium",
         "type": {
             "type": "humanoid",
             "tags": [
@@ -23116,7 +23116,7 @@
     },
     {
         "name": "Zombie",
-        "size": "M",
+        "size": "Medium",
         "type": "undead",
         "str": 13,
         "dex": 6,
