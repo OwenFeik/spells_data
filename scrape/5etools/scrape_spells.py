@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import requests
 import traceback
 
@@ -198,6 +199,9 @@ def parse_entries(spell):
             return ""
 
         ret += "\n\n"
+
+    ret = re.sub(r"\n{3,}", "\n\n", ret)
+    ret = re.sub(r"\n+$", "", ret)
 
     return ret
 
