@@ -127,6 +127,13 @@ def sub_tags(string):
         string,
         flags=re.MULTILINE
     )
+    # {@race internal name||Visible name}
+    string = re.sub(
+        r"{@race [^{}\|]+\|\|([^{}\|]+)}",
+        r"\1",
+        string,
+        flags=re.MULTILINE
+    )
     # {@x y} -> y
     string = re.sub(
         r"{@\w+ ([^\{\}\|]+)(\|(phb|GoS|DMG))?}",
