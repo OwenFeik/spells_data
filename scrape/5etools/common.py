@@ -21,7 +21,6 @@ def sub_tags(string):
             "ms {@hitYourSpellAttack}",
             "Melee spell attack: your spell attack modifier"
         )
-
     # {@hit n} -> +n
     string = re.sub(
         r'{@hit (\d+)}',
@@ -131,6 +130,13 @@ def sub_tags(string):
     # {@x y} -> y
     string = re.sub(
         r"{@\w+ ([^\{\}\|]+)(\|(phb|GoS|DMG))?}",
+        r"\1",
+        string,
+        flags=re.MULTILINE
+    )
+    # {x y} -> y
+    string = re.sub(
+        r"{@\w+ ([^{}\|]+)(\|[^{}]*)?}",
         r"\1",
         string,
         flags=re.MULTILINE

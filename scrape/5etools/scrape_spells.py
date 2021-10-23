@@ -12,7 +12,6 @@ INDEX_URL = ROOT_URL + "index.json"
 OUTDIR = "out"
 OUTFILE = os.path.join(OUTDIR, "scraped.json")
 
-
 # Map single character schools used by 5etools to full word schools used in
 # spells.json
 SCHOOL_MAPPING = {
@@ -32,6 +31,9 @@ CAST_TIME_MAPPING = {
 }
 
 BULLET_POINT = "\u2022"
+
+# maximum number of cells in a table row before we just use dotpoints instead
+MAX_CELL_CHARACTERS = 32
 
 def parse_cast_time(spell):
     cast_time_info = spell["time"][0]
@@ -60,6 +62,10 @@ def parse_range(spell):
             return "Touch"
         elif dst["type"] == "self":
             return "Self"
+        elif dst["type"] == "sight":
+            return "Sight"
+        elif dst["type"] == "unlimited":
+            return "Unlimited"
         elif dst["type"] == "feet":
             return str(dst["amount"]) + " feet"
         elif dst["type"] == "miles":
@@ -74,12 +80,20 @@ def parse_range(spell):
             return "Self (" + str(dst["amount"]) + "-mile radius)"
     elif rnge["type"] == "sphere":
         return "Self (" + str(dst["amount"]) + "-foot-radius sphere)"
+    elif rnge["type"] == "hemisphere":
+        return "Self (" + str(dst["amount"]) + "-foot-radius hemisphere)"
     elif rnge["type"] == "cone":
         if dst["type"] == "feet":
             return "Self (" + str(dst["amount"]) + "-foot cone)"
+    elif rnge["type"] == "line":
+        if dst["type"] == "feet":
+            return "Self (" + str(dst["amount"]) + "-foot line)"
+    elif rnge["type"] == "cube":
+        if dst["type"] == "feet":
+            return "Self (" + str(dst["amount"]) + "-foot cube)"
     elif rnge["type"] == "special":
         return "Special"
-    
+
     print(f"Couldn't parse range for {spell['name']}: ", rnge)
     return ""
 
@@ -161,25 +175,53 @@ def parse_cell(cell):
     print("Failed to parse cell:", cell)
     raise ValueError
 
+def format_as_dotpoints(cols):
+    ret = ""
+    
+    for i in range(len(cols[0])):
+        ret += BULLET_POINT + " " + cols[0][i] + ": "
+        for j in range(1, len(cols)):
+            ret += cols[j][i] + " "
+        ret = ret[:-1]
+
+    return ret
+
+def format_as_table(cols):
+    ret = ""
+    cols = list(map(pad_all_to_max_length, cols))
+    for i in range(len(cols[0])):
+        for j in range(len(cols)):
+            ret += cols[j][i] + " "
+        ret = ret[:-1] + "\n"
+    return f"```{ret}```"
+
 def format_table(entry):
+    rows = [entry["colLabels"]] + entry["rows"]
+    cols = [
+        [sub_tags(parse_cell(row[i])) for row in rows]
+        for i in range(len(rows[0]))
+    ]
+
+    as_dotpoints = False
+    for col in cols:
+        done = False
+        for row in col:
+            if len(row) > MAX_CELL_CHARACTERS:
+                as_dotpoints = True
+                done = True
+                break
+        if done:
+            break
+
     if "caption" in entry:
         ret = entry["caption"] + "\n"
     else:
         ret = ""
 
-    rows = [entry["colLabels"]] + entry["rows"]
-    cols = [
-        pad_all_to_max_length([sub_tags(parse_cell(row[i])) for row in rows])
-        for i in range(len(rows[0]))
-    ]
-    
-    for i in range(len(cols)):
-        row = [col[i] for col in cols]
-        for j in range(len(row)):
-            ret += row[j] + " "
-        ret += "\n"
-    
-    return ret
+    if as_dotpoints:
+        return ret + format_as_dotpoints(cols)
+    else:
+        return ret + format_as_table(cols)
 
 def parse_entries(spell):
     ret = ""
