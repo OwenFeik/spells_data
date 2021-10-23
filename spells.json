@@ -2390,7 +2390,7 @@
         "name": "Dream of the Blue Veil",
         "school": "conjuration",
         "level": 7,
-        "cast": "10 minutes",
+        "cast": "10 Minutes",
         "range": "20 ft",
         "components": "V, S, M (a magic item or a willing creature from the destination world)",
         "duration": "1 Minute (Concentration)",
