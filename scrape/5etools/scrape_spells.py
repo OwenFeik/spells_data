@@ -193,7 +193,7 @@ def format_as_table(cols):
         for j in range(len(cols)):
             ret += cols[j][i] + " "
         ret = ret[:-1] + "\n"
-    return f"```{ret}```"
+    return f"```\n{ret}```"
 
 def format_table(entry):
     rows = [entry["colLabels"]] + entry["rows"]
