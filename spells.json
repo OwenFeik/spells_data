@@ -14,7 +14,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Horrid Wilting"
+        ]
     },
     {
         "name": "Absorb Elements",
@@ -3527,7 +3529,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Platinum Shield"
+        ]
     },
     {
         "name": "Flame Arrows",
@@ -3858,7 +3862,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Speedy Courier"
+        ]
     },
     {
         "name": "Galder's Tower",
@@ -5219,7 +5225,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Glowing Coin"
+        ]
     },
     {
         "name": "Jim's Magic Missile",
@@ -5859,7 +5867,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Earthen Grasp"
+        ]
     },
     {
         "name": "Maze",
@@ -7246,7 +7256,9 @@
             "Warlock"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Psychic Lance"
+        ]
     },
     {
         "name": "Ravenous Void",
@@ -8086,7 +8098,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Snowball Swarm"
+        ]
     },
     {
         "name": "Soul Cage",
@@ -8932,7 +8946,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Caustic Brew"
+        ]
     },
     {
         "name": "Tasha's Hideous Laughter",
@@ -8970,7 +8986,9 @@
             "Warlock"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Mind Whip"
+        ]
     },
     {
         "name": "Tasha's Otherworldly Guise",
@@ -8988,7 +9006,9 @@
             "Wizard"
         ],
         "subclasses": [],
-        "alt_names": []
+        "alt_names": [
+            "Otherworldly Guise"
+        ]
     },
     {
         "name": "Telekinesis",
