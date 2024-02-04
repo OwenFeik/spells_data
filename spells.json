@@ -5207,7 +5207,9 @@
         "duration": "Concentration, up to 10 minutes",
         "description": "You are immune to all damage until the spell ends.",
         "ritual": false,
-        "classes": [],
+        "classes": [
+            "Wizard"
+        ],
         "subclasses": [],
         "alt_names": []
     },
