@@ -1,4 +1,5 @@
 import json
+import math
 import os.path
 import pathlib
 import subprocess
@@ -24,9 +25,11 @@ def spell_files(repo: pathlib.Path) -> list[pathlib.Path]:
                     files.append(file)
     return files
 
-def strip_trailing_brackets(string: str) -> str:
-    while string.endswith("]"):
+def strip_trailing_brackets(string: str, max: int = 1) -> str:
+    i = 0
+    while string.endswith("]") and i < max:
         string = string.removesuffix("]")
+        i += 1
     return string
 
 def parse_tag_body(tag_body: str) -> dict[str, str]:
@@ -40,25 +43,160 @@ def parse_tag_body(tag_body: str) -> dict[str, str]:
         entries[key] = value
     return entries
 
-def parse_damage_body(text: str) -> str:
+def str_is_valid_float(string: str) -> bool:
+    try:
+        float(string)
+        return True
+    except:
+        return False
 
+def round_off(string: str) -> str:
+    if str_is_valid_float(string):
+        return str(round(float(string)))
+    else:
+        return string
 
-def normalise_tag_to_text(tag: str) -> str:
+def parse_damage_body(rank: int, text: str) -> str:
+    # Examples:
+    #   @Damage[@item.level[persistent,acid]]
+    #   @Damage[2d8[piercing],2d4[slashing]|options:area-damage]
+    #   @Damage[(1d4+((@item.level)-1))[persistent,electricity]]
+    #   @Damage[(@item.level)d4[persistent,mental]]
+    #   @Damage[(2*ceil(@item.rank/2)-1)[bleed]] # TODO needs op precedence.
+    # This function accepts the body of the tag.
+    # If item.level or item.rank are present, they should be treated as 1.
+    [text, *_] = text.split("|") # Discard tags.
+
+    i = 0
+    operand_stack = []
+    operator_stack = []
+    tok = ""
+    ret = ""
+
+    FUNCS = ["ceil", "floor", "ternary", "gte", "max"]
+
+    def finish_tok():
+        nonlocal tok
+        if not tok:
+            return
+        elif tok in FUNCS:
+            operator_stack.append(tok)
+        elif tok == "@item.level" or tok == "@item.rank":
+            operand_stack.append(str(rank))
+        else:
+            operand_stack.append(tok)
+        tok = ""
+
+    while i < len(text):
+        c = text[i]
+        if c == "[":
+            finish_tok()
+            j = i + 1
+            while text[j] != "]":
+                j += 1
+
+            # Concatenate all values inside current brackets. To handle e.g.
+            # (@spell.level - 1)d4[type] as 1d4 type.
+            roll = round_off(operand_stack.pop())
+            while operand_stack and operand_stack[-1] != "(":
+                roll = round_off(operand_stack.pop()) + roll
+
+            types = text[i + 1:j].replace(",", " ")
+            if types == "bleed":
+                # for some reason persistent is implicit in forge bleeds.
+                types = "persistent bleed" 
+            if types == "healing":
+                types = ""
+            if ret:
+                ret += " and "
+            ret += roll + " " + types
+            i = j + 1
+        elif c.isalnum() or c in ['@', '.']:
+            tok += c
+        elif c in ["(", "+", "-", "*", "/"]:
+            finish_tok()
+            operator_stack.append(c)
+        elif c == ")":
+            finish_tok()
+            op = operator_stack.pop()
+            while op != "(":
+                rhs = operand_stack.pop()
+                lhs = operand_stack.pop()
+                if str_is_valid_float(lhs) and str_is_valid_float(rhs):
+                    rhs = float(rhs)
+                    lhs = float(lhs)
+                    if op == "+":
+                        result = lhs + rhs
+                    elif op == "-":
+                        result = lhs - rhs
+                    elif op == "*":
+                        result = lhs * rhs
+                    elif op == "/":
+                        result = lhs / rhs
+                    else:
+                        raise Exception(
+                            f"Unhandled operator '{op}' in: {text}"
+                        )
+                    operand_stack.append(str(result))
+                elif lhs == "0" or lhs == "0.0":
+                    operand_stack.append(rhs)
+                elif rhs == "0" or rhs == "0.0":
+                    operand_stack.append(lhs)
+                else:
+                    lhs = round_off(lhs)
+                    rhs = round_off(rhs)
+                    operand_stack.append(f"{lhs} {op} {rhs}")
+                op = operator_stack.pop()
+            if operator_stack and operator_stack[-1] in FUNCS:
+                func = operator_stack.pop()
+                if func == "ceil":
+                    val = float(operand_stack.pop())
+                    operand_stack.append(str(math.ceil(val)))
+                if func == "floor":
+                    val = float(operand_stack.pop())
+                    operand_stack.append(str(math.floor(val)))
+                elif func == "ternary":
+                    if_false = operand_stack.pop()
+                    if_true = operand_stack.pop()
+                    boolval = operand_stack.pop()
+
+                    if boolval == "True":
+                        operand_stack.append(if_true)
+                    else:
+                        operand_stack.append(if_false)
+                elif func == "gte":
+                    rhs = operand_stack.pop()
+                    lhs = operand_stack.pop()
+                    operand_stack.append(str(float(lhs) >= float(rhs)))
+                elif func == "max":
+                    rhs = operand_stack.pop()
+                    lhs = operand_stack.pop()
+                    if float(rhs) > float(lhs):
+                        operand_stack.append(rhs)
+                    else:
+                        operand_stack.append(lhs)
+        elif c in [" ", ","]:
+            finish_tok()
+        else:
+            raise Exception("Need to parse damage text: " + text)
+        i += 1
+
+    print("damage =", ret)
+    return ret
+
+def normalise_tag_to_text(rank: int, tag: str) -> str:
     [tagname, body] = tag.split("[", 1)
-    body = strip_trailing_brackets(body)
+    body = strip_trailing_brackets(body, 1)
     if tagname == "UUID":
         # Last segment of UUID is usually a nice human readable name.
         # E.g. UUID[Compendium.pf2e.conditionitems.Item.Grabbed]
         return body.rsplit(".", 1)[1]
     elif tagname == "Damage":
-        # E.g. Damage[10d6[bludgeoning]]
-        [roll, rest] = body.split("[", 1)
-        if "|" in rest:
-            [rest, _] = rest.split("|", 1) # Discard traits, etc.
-        damage = strip_trailing_brackets(rest).replace(",", " ")
-        if not damage.replace(" ", "x").isalnum():
-            raise Exception("weird damage text: " + damage + " (" + tag + ")")
-        return roll + " " + damage
+        try:
+            return parse_damage_body(rank, body) 
+        except Exception as e:
+            print("Failed to parse damage: " + body)
+            raise e
     elif tagname == "Check":
         # E.g. Check[flat|dc:3], Check[fortitude|against:spell]
         params = parse_tag_body(body)
@@ -72,8 +210,10 @@ def normalise_tag_to_text(tag: str) -> str:
             ty = "Will save"
         else:
             SKILLS = [
-                "acrobatics", "arcana", "athletics", "medicine", "perception",
-                "stealth", "thievery"
+                "acrobatics", "arcana", "athletics", "crafting", "deception",
+                "diplomacy", "intimidation", "medicine", "nature", "occultism",
+                "perception", "performance", "religion", "society", "stealth",
+                "survival", "thievery"
             ]
             for skill in SKILLS:
                 if skill in params:
@@ -98,68 +238,25 @@ def normalise_tag_to_text(tag: str) -> str:
                 raise Exception("unknown template type in template: " + tag) 
         distance = params["distance"]
         return f"{distance}-foot {ty}" 
-    elif "item.level" in tagname or "item.rank" in tagname:
-        # Appears in nested tags like @Damage[@item.level[persistent,acid]].
-        # Convert this to 1[persistent,acid] to then be expanded as damage.
-        # TODO parse arithmetic roll expressions.
-        # E.g. @Damage[2d8[piercing],2d4[slashing]|options:area-damage]
-        tag = tag.replace("item.level", "1").replace("item.rank", "1")
-        if ")" in tag:
-            end_of_expr = tag.rindex(")")
-            expr = tag[:end_of_expr + 1]
-            while expr.count(")") > expr.count("("):
-                end_of_expr -= 1
-                expr = tag[:end_of_expr + 1]
-            rest = tag[end_of_expr + 1:]
-        elif "[" in tag:
-            end_of_expr = tag.index("[")
-            expr = tag[:end_of_expr]
-            rest = tag[end_of_expr:]
-        else:
-            print("body =", tag)
-            raise Exception("failed to parse item.level expr: " + tag)
-        try:
-            value = eval(expr)
-        except:
-            print("tag  =", tag)
-            print("expr =", expr)
-            print("rest =", rest)
-            raise Exception("failed to parse item.level expr: " + tag)
-        if value == 0:
-            value = ""
-        else:
-            value = str(value)
-        return f"{value}{rest}"
     else:
         raise Exception("unknown tag: " + tag)
 
-def parse_description(desc: str) -> str:
+def parse_description(rank: int, desc: str) -> str:
     ret = ""
-    tag_stack = []
+    tag = None 
     tag_body = None
     tag_just_ended = None
     for c in desc:
-        if c == "@":
-            # Sometimes a tag is in an expression like "@Damage[(@item.rank..."
-            tag = ""
-            while len(tag_stack) > 0 and tag_stack[-1].endswith("("):
-                tag += "("
-                tag_stack[-1] = tag_stack[-1][:-1]
-            tag_just_ended = None
-            tag_stack.append(tag)
-        elif tag_stack:
-            tag_just_ended = None
-            tag_stack[-1] += c
+        if tag is not None:
+            tag += c
             if c == "]": 
-                current_tag = tag_stack[len(tag_stack) - 1]
-                if current_tag.count("[") == current_tag.count("]"):
-                    text = normalise_tag_to_text(current_tag)
-                    tag_stack.pop()
-                    if tag_stack:
-                        tag_stack[-1] += text
-                    else:
-                        ret += text
-                        tag_just_ended = text
+                if tag.count("[") == tag.count("]"):
+                    text = normalise_tag_to_text(rank, tag)
+                    tag_just_ended = tag
+                    tag = None
+                    ret += text
+        elif c == "@":
+            tag = ""
         elif c == "{" and tag_just_ended:
             tag_body = ""
         elif c == "}" and tag_body and tag_just_ended:
@@ -178,6 +275,9 @@ def parse_spell_file(path: pathlib.Path) -> dict:
     with open(path, "r") as f:
         data = json.load(f)
     sys = data["system"]
+    rank = sys["level"]["value"]
+
+    print(path)
 
     return {
         "name": data["name"],
@@ -188,7 +288,7 @@ def parse_spell_file(path: pathlib.Path) -> dict:
         "time": sys["time"]["value"],
         "duration": sys["duration"]["value"],
         "sustained": sys["duration"]["sustained"],
-        "description": parse_description(sys["description"]["value"]),
+        "description": parse_description(rank, sys["description"]["value"]),
         "traditions": sys["traits"]["traditions"],
         "traits": sys["traits"]["value"],
         "publication": sys["publication"]["title"],
@@ -208,6 +308,7 @@ for spell_file in spell_files(repo_path):
     except Exception as e:
         traceback.print_exception(e)
         print("Occurred when parsing " + str(spell_file))
+        print()
 
 with open("pf2e_spells.json", "w") as f:
     json.dump(spells, f, indent=4)
