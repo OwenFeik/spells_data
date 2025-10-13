@@ -29,13 +29,28 @@ def strip_trailing_brackets(string: str) -> str:
         string = string.removesuffix("]")
     return string
 
+def parse_tag_body(tag_body: str) -> dict[str, str]:
+    entries = {}
+    for entry in tag_body.split("|"):
+        [key, *rest] = entry.split(":", 1)
+        if len(rest) == 0:
+            value = ""
+        else:
+            value = rest[0]
+        entries[key] = value
+    return entries
+
+def parse_damage_body(text: str) -> str:
+
+
 def normalise_tag_to_text(tag: str) -> str:
     [tagname, body] = tag.split("[", 1)
+    body = strip_trailing_brackets(body)
     if tagname == "UUID":
         # Last segment of UUID is usually a nice human readable name.
         # E.g. UUID[Compendium.pf2e.conditionitems.Item.Grabbed]
-        return strip_trailing_brackets(body.rsplit(".", 1)[1])
-    if tagname == "Damage":
+        return body.rsplit(".", 1)[1]
+    elif tagname == "Damage":
         # E.g. Damage[10d6[bludgeoning]]
         [roll, rest] = body.split("[", 1)
         if "|" in rest:
@@ -44,40 +59,94 @@ def normalise_tag_to_text(tag: str) -> str:
         if not damage.replace(" ", "x").isalnum():
             raise Exception("weird damage text: " + damage + " (" + tag + ")")
         return roll + " " + damage
-    if tagname == "Check":
+    elif tagname == "Check":
         # E.g. Check[flat|dc:3], Check[fortitude|against:spell]
-        [kind, rest] = body.split("|", 1)
-        if kind == "flat":
-            [_dc, dc] = rest.removesuffix("]").split(":", 1)
-            assert _dc == "dc"
-            return f"DC {dc} flat check"
+        params = parse_tag_body(body)
+        if "flat" in params:
+            ty = "flat check"
+        elif "fortitude" in params:
+            ty = "Fortitude save"
+        elif "reflex" in params:
+            ty = "Reflex save"
+        elif "will" in params:
+            ty = "Will save"
         else:
-            raise Exception("unknown check kind: " + tag)
-    if tagname == "Template":
-        params = strip_trailing_brackets(body).split("|")
-        assert len(params) > 0
-        assert params[0].startswith("type:")
-        ty = params[0].removeprefix("type:")
-        if ty == "emanation":
-            assert params[1].startswith("distance:")
-            distance = params[1].removeprefix("distance:")
-            return distance + "-foot emanation"
+            SKILLS = [
+                "acrobatics", "arcana", "athletics", "medicine", "perception",
+                "stealth", "thievery"
+            ]
+            for skill in SKILLS:
+                if skill in params:
+                    ty = skill.capitalize() + " check"
+                    break
+            else:
+                raise Exception("unknown check kind: " + tag)
+        if "dc" in params:
+            return f"DC {params['dc']} {ty}"
         else:
-            raise Exception("unknown template type: " + ty + " (" + tag + ")")
+            return ty
+    elif tagname == "Template":
+        params = parse_tag_body(body) 
+        for template_ty in ["emanation", "burst", "line", "cone"]:
+            if template_ty in params:
+                ty = template_ty
+                break
+        else:
+            if "type" in params:
+                ty = params["type"]
+            else:
+                raise Exception("unknown template type in template: " + tag) 
+        distance = params["distance"]
+        return f"{distance}-foot {ty}" 
+    elif "item.level" in tagname or "item.rank" in tagname:
+        # Appears in nested tags like @Damage[@item.level[persistent,acid]].
+        # Convert this to 1[persistent,acid] to then be expanded as damage.
+        # TODO parse arithmetic roll expressions.
+        # E.g. @Damage[2d8[piercing],2d4[slashing]|options:area-damage]
+        tag = tag.replace("item.level", "1").replace("item.rank", "1")
+        if ")" in tag:
+            end_of_expr = tag.rindex(")")
+            expr = tag[:end_of_expr + 1]
+            while expr.count(")") > expr.count("("):
+                end_of_expr -= 1
+                expr = tag[:end_of_expr + 1]
+            rest = tag[end_of_expr + 1:]
+        elif "[" in tag:
+            end_of_expr = tag.index("[")
+            expr = tag[:end_of_expr]
+            rest = tag[end_of_expr:]
+        else:
+            print("body =", tag)
+            raise Exception("failed to parse item.level expr: " + tag)
+        try:
+            value = eval(expr)
+        except:
+            print("tag  =", tag)
+            print("expr =", expr)
+            print("rest =", rest)
+            raise Exception("failed to parse item.level expr: " + tag)
+        if value == 0:
+            value = ""
+        else:
+            value = str(value)
+        return f"{value}{rest}"
     else:
         raise Exception("unknown tag: " + tag)
-    return body
-
 
 def parse_description(desc: str) -> str:
     ret = ""
     tag_stack = []
-    tag_body = ""
+    tag_body = None
     tag_just_ended = None
     for c in desc:
         if c == "@":
+            # Sometimes a tag is in an expression like "@Damage[(@item.rank..."
+            tag = ""
+            while len(tag_stack) > 0 and tag_stack[-1].endswith("("):
+                tag += "("
+                tag_stack[-1] = tag_stack[-1][:-1]
             tag_just_ended = None
-            tag_stack.append("")
+            tag_stack.append(tag)
         elif tag_stack:
             tag_just_ended = None
             tag_stack[-1] += c
@@ -93,11 +162,11 @@ def parse_description(desc: str) -> str:
                         tag_just_ended = text
         elif c == "{" and tag_just_ended:
             tag_body = ""
-        elif c == "}" and tag_just_ended:
+        elif c == "}" and tag_body and tag_just_ended:
             ret = ret.removesuffix(tag_just_ended) + tag_body
-            tag_body = ""
+            tag_body = None
             tag_just_ended = None
-        elif tag_just_ended:
+        elif tag_body is not None:
             tag_body += c
         else:
             tag_just_ended = None
@@ -109,8 +178,6 @@ def parse_spell_file(path: pathlib.Path) -> dict:
     with open(path, "r") as f:
         data = json.load(f)
     sys = data["system"]
-
-    print(path)
 
     return {
         "name": data["name"],
