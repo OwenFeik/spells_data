@@ -62,7 +62,7 @@ def parse_damage_body(rank: int, text: str) -> str:
     #   @Damage[2d8[piercing],2d4[slashing]|options:area-damage]
     #   @Damage[(1d4+((@item.level)-1))[persistent,electricity]]
     #   @Damage[(@item.level)d4[persistent,mental]]
-    #   @Damage[(2*ceil(@item.rank/2)-1)[bleed]] # TODO needs op precedence.
+    #   @Damage[(2*ceil(@item.rank/2)-1)[bleed]]
     # This function accepts the body of the tag.
     # If item.level or item.rank are present, they should be treated as 1.
     [text, *_] = text.split("|") # Discard tags.
@@ -71,10 +71,11 @@ def parse_damage_body(rank: int, text: str) -> str:
     operand_stack = []
     operator_stack = []
     tok = ""
-    ret = ""
+    rolls = []
 
     FUNCS = ["ceil", "floor", "ternary", "gte", "max"]
     OPS = ["+", "-", "*", "/"]
+    XML_ROLLS = True
 
     def finish_tok():
         nonlocal tok
@@ -140,9 +141,7 @@ def parse_damage_body(rank: int, text: str) -> str:
                 types = "persistent bleed" 
             if types == "healing":
                 types = ""
-            if ret:
-                ret += " and "
-            ret += roll + " " + types
+            rolls.append((roll, types))
             i = j + 1
         elif c.isalnum() or c in ['@', '.']:
             tok += c
@@ -194,6 +193,18 @@ def parse_damage_body(rank: int, text: str) -> str:
         else:
             raise Exception("Need to parse damage text: " + text)
         i += 1
+
+    if XML_ROLLS:
+        ret = "<roll>"
+        for (roll, types) in rolls:
+            ret += f'<r dice="{roll}" type="{types}"/>'
+        ret += "</roll>"
+    else:
+        ret = ""
+        for (roll, types) in rolls:
+            if ret:
+                ret += " and "
+            ret += roll + " " + types
 
     return ret
 
@@ -290,8 +301,6 @@ def parse_spell_file(path: pathlib.Path) -> dict:
     sys = data["system"]
     rank = sys["level"]["value"]
 
-    print(path)
-
     return {
         "name": data["name"],
         "rank": sys["level"]["value"],
@@ -321,6 +330,7 @@ for spell_file in spell_files(repo_path):
         traceback.print_exception(e)
         print("Occurred when parsing " + str(spell_file))
         print()
+spells = list(sorted(spells, key=lambda spell: spell["name"]))
 
 with open("pf2e_spells.json", "w") as f:
     json.dump(spells, f, indent=4)
