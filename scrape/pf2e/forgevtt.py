@@ -74,6 +74,7 @@ def parse_damage_body(rank: int, text: str) -> str:
     ret = ""
 
     FUNCS = ["ceil", "floor", "ternary", "gte", "max"]
+    OPS = ["+", "-", "*", "/"]
 
     def finish_tok():
         nonlocal tok
@@ -86,6 +87,38 @@ def parse_damage_body(rank: int, text: str) -> str:
         else:
             operand_stack.append(tok)
         tok = ""
+
+    def precedence(op) -> int:
+        if op in OPS:
+            return OPS.index(op)
+        else:
+            return -1
+
+    def process_op(op):
+        rhs = operand_stack.pop()
+        lhs = operand_stack.pop()
+        if str_is_valid_float(lhs) and str_is_valid_float(rhs):
+            rhs = float(rhs)
+            lhs = float(lhs)
+            if op == "+":
+                result = lhs + rhs
+            elif op == "-":
+                result = lhs - rhs
+            elif op == "*":
+                result = lhs * rhs
+            elif op == "/":
+                result = lhs / rhs
+            else:
+                raise Exception(f"Unhandled operator '{op}' in: {text}")
+            operand_stack.append(str(result))
+        elif lhs == "0" or lhs == "0.0":
+            operand_stack.append(rhs)
+        elif rhs == "0" or rhs == "0.0":
+            operand_stack.append(lhs)
+        else:
+            lhs = round_off(lhs)
+            rhs = round_off(rhs)
+            operand_stack.append(f"{lhs} {op} {rhs}")
 
     while i < len(text):
         c = text[i]
@@ -113,39 +146,20 @@ def parse_damage_body(rank: int, text: str) -> str:
             i = j + 1
         elif c.isalnum() or c in ['@', '.']:
             tok += c
-        elif c in ["(", "+", "-", "*", "/"]:
+        elif c in OPS:
             finish_tok()
+            while operator_stack and \
+                precedence(operator_stack[-1]) > precedence(c):
+                process_op(operator_stack.pop())
             operator_stack.append(c)
+        elif c == "(":
+            finish_tok()
+            operator_stack.append("(")
         elif c == ")":
             finish_tok()
             op = operator_stack.pop()
             while op != "(":
-                rhs = operand_stack.pop()
-                lhs = operand_stack.pop()
-                if str_is_valid_float(lhs) and str_is_valid_float(rhs):
-                    rhs = float(rhs)
-                    lhs = float(lhs)
-                    if op == "+":
-                        result = lhs + rhs
-                    elif op == "-":
-                        result = lhs - rhs
-                    elif op == "*":
-                        result = lhs * rhs
-                    elif op == "/":
-                        result = lhs / rhs
-                    else:
-                        raise Exception(
-                            f"Unhandled operator '{op}' in: {text}"
-                        )
-                    operand_stack.append(str(result))
-                elif lhs == "0" or lhs == "0.0":
-                    operand_stack.append(rhs)
-                elif rhs == "0" or rhs == "0.0":
-                    operand_stack.append(lhs)
-                else:
-                    lhs = round_off(lhs)
-                    rhs = round_off(rhs)
-                    operand_stack.append(f"{lhs} {op} {rhs}")
+                process_op(op)
                 op = operator_stack.pop()
             if operator_stack and operator_stack[-1] in FUNCS:
                 func = operator_stack.pop()
@@ -181,7 +195,6 @@ def parse_damage_body(rank: int, text: str) -> str:
             raise Exception("Need to parse damage text: " + text)
         i += 1
 
-    print("damage =", ret)
     return ret
 
 def normalise_tag_to_text(rank: int, tag: str) -> str:
@@ -293,7 +306,6 @@ def parse_spell_file(path: pathlib.Path) -> dict:
         "traits": sys["traits"]["value"],
         "publication": sys["publication"]["title"],
     }
-
 
 
 if len(sys.argv) < 2:
