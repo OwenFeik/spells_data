@@ -7,6 +7,15 @@ import tempfile
 import traceback
 import sys
 
+def clean_unicode(text: str) -> str:
+    return text.replace('\u2010', '-') \
+        .replace('\u2013', '-')        \
+        .replace('\u2014', '-')        \
+        .replace('\u2018', '\'')       \
+        .replace('\u2019', '\'')       \
+        .replace('\u00d7', '*')
+
+
 def clone_repository() -> pathlib.Path: 
     directory = tempfile.mkdtemp()
     repository = "https://github.com/foundryvtt/pf2e.git"
@@ -266,6 +275,7 @@ def normalise_tag_to_text(rank: int, tag: str) -> str:
         raise Exception("unknown tag: " + tag)
 
 def parse_description(rank: int, desc: str) -> str:
+    desc = clean_unicode(desc)
     ret = ""
     tag = None 
     tag_body = None
@@ -302,18 +312,18 @@ def parse_spell_file(path: pathlib.Path) -> dict:
     rank = sys["level"]["value"]
 
     return {
-        "name": data["name"],
+        "name": clean_unicode(data["name"]),
         "rank": sys["level"]["value"],
         "rarity": sys["traits"]["rarity"],
-        "target": sys["target"]["value"],
-        "range": sys["range"]["value"],
-        "time": sys["time"]["value"],
-        "duration": sys["duration"]["value"],
+        "target": clean_unicode(sys["target"]["value"]),
+        "range": clean_unicode(sys["range"]["value"]),
+        "time": clean_unicode(sys["time"]["value"]),
+        "duration": clean_unicode(sys["duration"]["value"]),
         "sustained": sys["duration"]["sustained"],
         "description": parse_description(rank, sys["description"]["value"]),
         "traditions": sys["traits"]["traditions"],
         "traits": sys["traits"]["value"],
-        "publication": sys["publication"]["title"],
+        "publication": clean_unicode(sys["publication"]["title"]),
     }
 
 
